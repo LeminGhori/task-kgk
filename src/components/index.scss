@@ -1,0 +1,90 @@
+$blue: var(--blue);
+.logo-img {
+  width: 90%;
+  height: 90%;
+}
+.me-auto {
+  gap: 10px;
+}
+.sticky-top {
+  z-index: 111;
+  background-color: white;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: $blue !important;
+}
+.nav-box-contenar {
+  box-shadow: 0px 5px 10px 1px rgb(0 0 0 / 30%);
+}
+@media only screen and (min-width: 992px) {
+  .media-flex-center {
+    display: flex;
+    justify-content: end;
+  }
+}
+
+.color-blue {
+  color: $blue;
+  fill: $blue;
+}
+.cart-popup {
+  position: fixed; /* Change to fixed to make sure it's centered relative to the viewport */
+  z-index: 111;
+  top: 50%;
+  left: 50%; /* Changed right to left */
+  transform: translate(-50%, -50%); /* Centering trick */
+  width: 450px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.cart-popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.cart-popup-header h3 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.cart-popup-body {
+  overflow-y: auto;
+  max-height: 300px; /* Adjust as needed */
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+}
+
+.cart-item-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.cart-item-info {
+  flex: 1;
+}
+
+.cart-item-actions {
+  display: flex;
+  align-items: center;
+}
+
+.cart-item-actions button {
+  margin-left: 5px;
+}
+

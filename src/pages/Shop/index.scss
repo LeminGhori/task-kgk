@@ -1,0 +1,105 @@
+body {
+  background-color: rgb(233, 233, 233);
+}
+
+.header-category {
+  background-color: rgb(59, 37, 110);
+  color: white;
+  height: 72px;
+  display: flex;
+  align-items: end;
+  padding-bottom: 6px;
+}
+
+.categorys-title-font {
+  font-size: 1.5rem;
+}
+
+.range-km {
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+  border-top: 5px dashed yellow;
+}
+.range-end {
+  position: absolute;
+  background-color: yellow;
+  border-radius: 50%;
+  padding: 0 5px;
+  right: 0;
+  top: -27px;
+  font-size: 0.8rem;
+}
+.category-ranges {
+  position: relative;
+}
+
+.all-catagory {
+  display: flex;
+  gap: 10px;
+  font-size: 1.25rem;
+  margin-top: 10px;
+}
+
+.show-catagory {
+  font-weight: 600;
+}
+
+.filter {
+  width: 19%;
+  background-color: white;
+}
+
+.filter-product {
+  width: 59%;
+  background-color: white;
+  padding: 10px;
+}
+
+.filter-shop {
+  width: 19%;
+  background-color: white;
+  padding: 10px;
+}
+
+.filter-header {
+  color: rgb(209, 110, 52);
+  padding: 10px;
+  background-color: rgb(218, 218, 218);
+}
+.filter-titles {
+  padding: 10px;
+  color: rgb(78, 2, 165);
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+.filter-items {
+  padding: 0 10px;
+}
+.filter-item {
+  margin-top: 10px;
+  cursor: pointer;
+}
+.filter-items:hover {
+  background-color: rgb(245, 245, 245);
+}
+
+.filter-product .col {
+  width: 222px;
+  max-width: 222px;
+}
+
+.filter-product .shops-list-img img {
+  height: 100px !important;
+  width: 100px !important;
+}
+
+.filter-component {
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 768px) {
+  .category-ranges {
+    display: none;
+  }
+}
